@@ -1,0 +1,26 @@
+.content {
+  width: 954px;
+  height: 410px;
+  overflow: auto;
+  background: rgb(250, 239, 241);
+  border: 1px solid black;
+  border-radius: 15px;
+  box-sizing: content-box;
+}
+.element {
+  width: 300px;
+  height: 250px;
+  display: inline-block;
+  background: rgb(129, 101, 65);
+  border-radius: 15px;
+  margin:5px 4px 5px 4px ;
+  opacity: .85;
+  box-shadow: inset 1px 1px 10px 1px black;
+  box-shadow: inset -1px -1px 10px 1px black;
+}
+.h {
+  text-align: center;
+}
+.text {
+  font-size: 17px;
+}
