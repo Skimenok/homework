@@ -1,0 +1,228 @@
+body {
+  font-family: "Montserrat", Arial, sans-serif;
+  background: #181e34;
+  color: #fff;
+}
+.continer {
+  max-width: 930px;
+  margin: 0 auto;
+  padding: 0 15px;
+  height: 100%;
+  font-size: 16px;
+}
+
+/* ===================================================== */
+
+.header {
+  padding: 30px 0 36px 0;
+}
+.header__content {
+  display: flex;
+  justify-content: space-between;
+}
+.header__img {
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+.header__ul {
+  display: flex;
+}
+.header__li {
+}
+.header__a {
+  margin-right: 30px;
+  font-weight: 400;
+}
+.header__register {
+  color: #2766ae;
+  background: #fff;
+  border-radius: 100px;
+  padding: 14px 30px;
+  font-weight: 500;
+}
+
+/* ===================================================== */
+
+.main__one-section {
+  background: url(../img/backround.jpg) 70% 70% / cover no-repeat;
+  padding: 120px 0;
+}
+.one__h1 {
+  font-weight: 600;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+.one__content {
+  display: flex;
+  justify-content: space-between;
+}
+.one__texts {
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 436px;
+}
+.one__text-1 {
+}
+.one__text-1 span {
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #01a2cb;
+  margin-left: 4px;
+}
+.one__text-2 {
+}
+.one__buttons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 360px;
+}
+.one__button-1 {
+  margin-bottom: 10px;
+  background: linear-gradient(180deg, #00a4cc 0%, #2766ae 100%);
+  border-radius: 100px;
+  padding: 18px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.one__button-2 {
+  background: linear-gradient(129deg, #00a4cc 0%, #2766ae 100%);
+  border-radius: 100px;
+  padding: 18px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===================================================== */
+
+.main__two-section {
+  margin-top: 120px;
+}
+.two__h2-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.two__h2 {
+  font-weight: 600;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.two__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  max-width: 513px;
+  margin-bottom: 60px;
+}
+.two__li {
+  /* display: flex; */
+  box-shadow: 4px 4px 13px 0 rgba(5, 13, 41, 0.76);
+  background: #197cb8;
+  border-radius: 16px;
+  margin-right: 24px;
+  margin-bottom: 24px;
+}
+.two__ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.two__li-div {
+  margin: 28px;
+  flex: 0 0 25%;
+}
+.li__h3 {
+  font-weight: 600;
+  font-size: 22px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.li__p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  max-width: 144px;
+}
+
+.null {
+  margin-right: 0;
+}
+/* .two-div__button {
+  display: flex;
+  max-width: 436px;
+  justify-content: center;
+  align-items: center;
+} */
+.two__button {
+  /* margin-bottom: 10px; */
+  background: linear-gradient(180deg, #00a4cc 0%, #2766ae 100%);
+  border-radius: 100px;
+  padding: 18px 30px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  max-width: 436px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* ===================================================== */
+
+.footer {
+  margin-top: 180px;
+}
+.footer__content {
+  display: flex;
+  /* justify-content: space-between; */
+}
+.foorer__logo {
+  display: flex;
+  flex-direction: column;
+  margin-right: 197px;
+}
+.footer__logo img{
+  margin-bottom: 15px;
+}
+.footer__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 276px;
+}
+.foter__stolb-one {
+  /* margin-right: -94px; */
+  margin-left: 197px;
+}
+.footer__h4 {
+  font-weight: 600;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+.footer__ul {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+.footer__li {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 20px;
+  max-width: 115px;
+}
+.foter__stolb-two {
+  margin-right: 89px;
+  margin-left: 117px;
+}
