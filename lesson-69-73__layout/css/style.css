@@ -1,0 +1,47 @@
+body {
+  line-height: 125%;
+  font-family: "Montserrat", "Arial", sans-serif;
+  background: #f8fcff;
+  color: #25282b;
+}
+.continer {
+  max-width: 1230px;
+  margin: 0 15px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/*******************************************************************/
+
+.header {
+  margin: 30px 0;
+}
+.header-inner {
+  display: grid;
+  grid-template-columns: 1fr 54px 1fr;
+  align-items: center;
+  align-content: center;
+}
+.header__nav {
+
+}
+.nav-list {
+  display: flex;
+  gap: 30px;
+}
+.nav-item {
+}
+.nav__link {
+}
+.header__logo {
+  max-width: 54px;
+}
+.header-social {
+  display: flex;
+  gap: 30px;
+  justify-content: end;
+}
+.social-item {
+}
+.social-link {
+}
