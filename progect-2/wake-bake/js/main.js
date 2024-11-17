@@ -7,6 +7,13 @@ const toggleBurgerClass = () => body.classList.toggle("body--burger");
 burger.addEventListener("click", toggleBurgerClass);
 nav.addEventListener("click", toggleBurgerClass);
 
+document.addEventListener("keydown", (even) => {
+  if ((even.code == "Escape" && body.classList.contains("body--burger"))) {
+    toggleBurgerClass();
+  }
+  }
+);
+
 // burger.addEventListener("click", () => {
 //   if (body.classList.contains("body--burger")) {
 //     toggleBurgerClass();
