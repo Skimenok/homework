@@ -1,0 +1,120 @@
+@media (max-width: 1200px) {
+  .hero__img > img {
+    width: 100%;
+  }
+  .hero__img {
+    margin-right: 10px;
+  }
+  .hero__img-control {
+    position: static;
+    max-width: none;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 1100px) {
+  .footer__inner {
+    grid-template: auto auto / auto auto auto;
+    justify-content: space-between;
+  }
+  .footer__column:last-child {
+    grid-column: -3 / -2;
+    justify-items: center;
+  }
+  .footer__column {
+    justify-items: center;
+  }
+}
+@media (max-width: 900px) {
+  .header__nav {
+    padding: 26vh 15px 30px;
+    font-size: 24px;
+    background: var(--general-bg);
+    inset: 0;
+    position: fixed;
+    z-index: 10;
+    transform: translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s;
+  }
+  .header__top-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .burger {
+    display: flex;
+    margin: -2.5vw;
+    /* overflow: hidden;
+    margin-top: 5vh; */
+  }
+  .body--burger {
+    overflow: hidden;
+  }
+  .body--burger .header__nav {
+    transform: translateY(0%);
+    opacity: 1;
+    visibility: visible;
+  }
+  .body--burger .burger span::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  .body--burger .burger span::after {
+    transform: rotate(-45deg);
+    bottom: 0;
+  }
+  .body--burger .burger span {
+    /* background: var(--general-bg); */
+    background: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .hero__content {
+    max-width: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .hero__img {
+    display: none;
+  }
+  .hero-mobail {
+    display: flex;
+    margin: 0 0 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero__text {
+    margin-bottom: 20px;
+  }
+  /* ///////////////////////////////////////// */
+
+  .footer__inner {
+    grid-template: repeat(4, auto) / auto;
+    justify-content: center;
+    gap: 30px;
+  }
+  .footer__column {
+    /* border: 1px solid #ffa55c;
+    border-radius: 20px;
+    padding: 7px; */
+    /* box-shadow: 0 0 10px 2.3px #ffa55c;
+    border-radius: 15px;
+    padding: 5px; */
+  }
+  .footer__column:last-child {
+    grid-column: 1 / 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding-bottom: 80px;
+  }
+  .hero__title {
+    font-size: 12vw;
+  }
+}
