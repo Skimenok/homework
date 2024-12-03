@@ -107,9 +107,25 @@
     grid-template: repeat(3, auto) / 1fr 1fr;
     max-width: none;
   }
-
-  
-.main__program {
+  .main__program {
+    padding-bottom: 75px;
+  }
+  /* ========================================================= */
+  .gallery__inner {
+    grid-template: none;
+  }
+  .gallery__img {
+    display: none;
+  }
+  .gallery__content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .gallery__info {
+    max-width: none;
+  }
+  /* ============================== */
+  .main__gallery {
     padding-bottom: 75px;
 }
 }
@@ -144,14 +160,6 @@
     justify-content: center;
     gap: 30px;
   }
-  .footer__column {
-    /* border: 1px solid #ffa55c;
-    border-radius: 20px;
-    padding: 7px; */
-    /* box-shadow: 0 0 10px 2.3px #ffa55c;
-    border-radius: 15px;
-    padding: 5px; */
-  }
   .footer__column:last-child {
     grid-column: 1 / 1;
   }
@@ -173,8 +181,22 @@
   }
 
   /* ========================================================================================================= */
+  .main__testimonials__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .swiper-scrollbar {
+  height: 5px;
+  width: 50%;
+  margin: 0 auto;
+}
+.swiper-horizontal > .swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+  height: 5px;
+  width: 50%;
 }
 
+}
 @media (max-width: 600px) {
   .hero {
     padding-bottom: 80px;
@@ -191,14 +213,9 @@
   .about__grid-item {
     padding: 10px 15px;
   }
-
-  /* ========================================================================================================= */
-  /* .about {
-      padding: 40px 0;
-  } */
-  .about__grid {
-    grid-template: none;
-  }
+  
+  /* ========================================================================================================= *
+  
 
   /* ======================================== */
   .tab__controls {
@@ -230,9 +247,15 @@
   }
   a.button.program__action-button {
     min-height: 60px;
-}
-}
+  }
 
+  /* =========================================================== */
+
+  .testimonials__slide {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 @media (max-width: 500px) {
   .program__title {
     font-size: 12vw;
@@ -244,7 +267,14 @@
   }
   .action__discount {
     text-align: center;
-}
+  }
+  .title {
+    font-size: 12vw;
+  }
+  .testimonials__slide {
+    gap: 15px;
+    padding: 20px 20px 30px;
+  }
 }
 @media (max-width: 400px) {
   .about {
@@ -269,5 +299,6 @@
   }
   .action__discount {
     text-align: inherit;
-}
+  }
+
 }

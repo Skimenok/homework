@@ -150,16 +150,16 @@ accordionLists.forEach((el) => {
 // =================================================================================
 // =================================================================================
 
-const swiper = new Swiper(".gallery__slider", {
+new Swiper(".gallery__slider", {
   // Optional parameters
   // direction: "vertical",
   // loop: true,
-  spaceBetween: 32,
-  slidesPerView: 4,
+  spaceBetween: 15,
+  slidesPerView: 2,
   // If we need pagination
   pagination: {
     el: ".gallery__pagination",
-    type: 'fraction'
+    type: "fraction",
   },
 
   // Navigation arrows
@@ -168,8 +168,43 @@ const swiper = new Swiper(".gallery__slider", {
     prevEl: ".gallery__prev",
   },
 
-  // And if we need scrollbar
-  // scrollbar: {
-  //   el: ".swiper-scrollbar",
-  // },
+  breakpoints: {
+    600: {
+      slidesPerView: 3,
+    },
+    // when window width is >= 480px
+    800: {
+      slidesPerView: 3,
+      spaceBetween: 32,
+    },
+    1101: {
+      slidesPerView: 4,
+    },
+  },
+});
+
+// =================================================================================
+// =================================================================================
+// =================================================================================
+
+new Swiper(".testimonials__slider", {
+  spaceBetween: 1,
+  slidesPerView: 1,
+  centeredSlides: true,
+  navigation: {
+    nextEl: ".testimonials__next",
+    prevEl: ".testimonials__prev",
+  },
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    draggable: true,
+  },
+  breakpoints: {
+    900: {
+      slidesPerView: 1.5,
+    },
+    1201: {
+      slidesPerView: 2.1,
+    },
+  },
 });

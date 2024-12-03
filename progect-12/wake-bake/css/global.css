@@ -72,17 +72,6 @@ body {
 }
 
 .button {
-  /* font-size: 16px;
-  width: 100%;
-  max-width: 358px;
-  font-weight: 500;
-  line-height: 1.6;
-  background: var(--accent-color);
-  padding: 18px;
-  border-radius: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center; */
   width: 100%;
   display: flex;
   align-items: center;
@@ -108,6 +97,9 @@ body {
 }
 
 .main__gallery {
+  padding-bottom: 140px;
+}
+.main__testimonials {
   padding-bottom: 140px;
 }
 .modal {
@@ -166,8 +158,6 @@ body {
 }
 .modal__window-text {
   margin-bottom: 30px;
-}
-.modal__form {
 }
 .label {
   position: relative;
