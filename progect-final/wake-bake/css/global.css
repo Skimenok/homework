@@ -1,0 +1,213 @@
+:root {
+  --general-text: #312c27;
+  --accent-text: #1f1711;
+  --general-bg: #fff9f4;
+  --accent-bg: #ffe0cb;
+  --accent-color: #ffa55c;
+  --color-input: #ac907a;
+}
+body {
+  background: var(--general-bg);
+  font-family: "Montserrat", "Arial", sans-serif;
+  line-height: 1.5;
+  color: var(--general-text);
+}
+.bodu__opend-modal {
+  overflow: hidden;
+}
+.wraper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.continer {
+  margin: 0 auto;
+  padding: 0 15px;
+  height: 100%;
+  max-width: 1310px;
+}
+.main {
+  flex-grow: 1;
+}
+.title {
+  font-weight: 400;
+  font-size: 72px;
+  color: var(--accent-text);
+  line-height: 0.9;
+  font-family: "Gabriola";
+}
+.burger {
+  width: 55px;
+  height: 55px;
+  display: none;
+  z-index: 15;
+  position: fixed;
+  left: 90%;
+}
+
+.burger span,
+.burger span::before,
+.burger span::after {
+  border-radius: 100px;
+  width: 30px;
+  height: 3px;
+  background: var(--general-text);
+  display: block;
+  transition: all 0.4s;
+}
+.burger span {
+  position: relative;
+}
+.burger span::before {
+  content: "";
+  top: -8px;
+  position: absolute;
+}
+.burger span::after {
+  content: "";
+  bottom: -8px;
+  position: absolute;
+}
+
+.button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-color);
+  border-radius: 100px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 3px 15px;
+  height: 62px;
+  transition: all 0.4s;
+}
+.button:hover {
+  background: #ff9138;
+}
+
+.about {
+  padding: 140px 0;
+}
+.main__program {
+  padding-bottom: 145px;
+}
+
+.main__gallery {
+  padding-bottom: 140px;
+}
+.main__testimonials {
+  padding-bottom: 140px;
+}
+.modal {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  inset: 0;
+  background: #0000006c;
+  z-index: 20;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s;
+  padding: 15px;
+}
+.modal__empty {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.4s;
+}
+.modal__window {
+  background: var(--general-bg);
+  border-radius: 20px;
+  max-width: 428px;
+  position: relative;
+  padding: 0 60px 60px;
+}
+.modal__close {
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.modal__close path,
+.modal__close rect {
+  transition: all 0.4s;
+}
+.modal__close:hover path {
+  stroke: var(--color-input);
+}
+.modal__close:hover rect {
+  stroke: var(--color-input);
+}
+.modal__img {
+  margin-top: -65px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.modal__windov-title {
+  font-weight: 400;
+  font-size: 42px;
+  color: var(--accent-text);
+  line-height: 0.9;
+  font-family: "Gabriola";
+  margin-bottom: 10px;
+}
+.modal__window-text {
+  margin-bottom: 30px;
+}
+.label {
+  position: relative;
+}
+.modal__input {
+  margin-bottom: 10px;
+  border: 1px solid var(--color-input);
+  border-radius: 100px;
+  padding: 19px 42px 19px 28px;
+  display: block;
+  width: 100%;
+  max-width: 308px;
+  transition: all 0.4s;
+  position: relative;
+}
+.label span {
+  position: absolute;
+  inset: 0;
+  color: var(--color-input);
+  font-weight: 400;
+  font-size: 11px;
+  top: 12px;
+  left: 28px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s;
+  z-index: 3;
+  white-space: nowrap;
+}
+.modal__input::placeholder {
+  color: var(--color-input);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  transition: all 0.4s;
+}
+.modal__input:hover::placeholder {
+  color: var(--accent-color);
+}
+.modal__input:hover {
+  border-color: var(--accent-color);
+}
+.modal__input:focus {
+  padding: 27px 42px 12px 28px;
+  border-color: var(--accent-color);
+}
+.modal__input:focus::placeholder {
+  color: var(--accent-color);
+}
+.modal__input:focus + span {
+  opacity: 1;
+  visibility: visible;
+}

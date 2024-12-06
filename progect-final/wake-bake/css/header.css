@@ -1,0 +1,131 @@
+.header {
+  background: url("../img/decor/welcome__backround.png") 50% 100% / cover
+    no-repeat;
+}
+.header__top {
+  padding-top: 19px;
+}
+.header__top-inner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.header__top-logo {
+  max-height: 79px;
+}
+.header__top-list {
+  display: flex;
+  gap: 40px;
+}
+.header__nav-link {
+  display: block;
+  padding: 5px 0;
+  position: relative;
+  z-index: 1;
+}
+.header__nav-link::before {
+  content: "";
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  top: -8px;
+  left: -13px;
+  border-radius: 50%;
+  background: var(--accent-color);
+  opacity: 0;
+  transition: all 0.4s;
+  z-index: -1;
+  transition: all 0.4s;
+}
+.header__nav-link:hover::before {
+  opacity: 1;
+}
+.hero {
+  padding: 48px 0 140px;
+}
+.hero__inner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+}
+.hero__content {
+  max-width: 519px;
+}
+.hero__info {
+  text-transform: uppercase;
+  color: #b197b2;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.hero__info span {
+  display: flex;
+  align-items: center;
+  /* position: relative; */
+}
+.hero__info span::after {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  background: #b197b2;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+.hero__info span:last-child::after {
+  content: none;
+}
+.hero__title {
+  margin-bottom: 30px;
+}
+.hero__text {
+  margin-bottom: 40px;
+  max-width: 358px;
+}
+.hero__img {
+  margin-right: 247px;
+  position: relative;
+}
+.hero__img-control {
+  position: absolute;
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  max-width: 200px;
+  bottom: 11%;
+  left: calc(100% - 39px);
+  align-items: center;
+}
+.hero__button-player {
+  width: 78px;
+  height: 78px;
+  background: #ffe0cb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1.5%;
+  flex-shrink: 0;
+  position: relative;
+}
+.hero__button {
+  max-width: 358px;
+}
+.hero__button-player::before {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  border: 1px solid var(--accent-color);
+  border-radius: 50%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.4s;
+}
+.hero__button-player:hover::before {
+  opacity: 1;
+}
+.hero-mobail {
+  display: none;
+}

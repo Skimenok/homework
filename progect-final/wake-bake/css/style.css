@@ -1,0 +1,17 @@
+@import 'fonts.css';
+@import 'reset.css';
+@import 'global.css';
+@import 'swiper-bundle.min.css';
+
+@import url(header.css);
+@import url(about.css);
+@import url(programe.css);
+@import url(gallery.css);
+@import url(testimonials.css);
+@import url(contact.css);
+@import url(footer.css);
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top:70px ;
+}

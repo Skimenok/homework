@@ -1,0 +1,234 @@
+.programe__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-bottom: 60px;
+  gap: 15px;
+}
+.program__title {
+  margin-bottom: 20px;
+}
+.tab__controls {
+  display: flex;
+  gap: 26px;
+}
+.tab__controls-link {
+  display: block;
+  box-shadow: 0 4px 20px 0 rgba(206, 195, 185, 0.3);
+  padding: 14px 30px;
+  border-radius: 100px;
+  transition: all 0.4s;
+  white-space: nowrap;
+}
+.tab__controls-link:hover {
+  background: #ffe0cb;
+}
+.tab__controls-link--active {
+  background: #ffe0cb;
+  box-shadow: 0 4px 20px 0 rgba(206, 195, 185, 0);
+}
+.tab-content {
+  display: none;
+}
+.tab-content--show {
+  display: block;
+}
+@keyframes tabContentAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.tab-content--show .accordion__list-control {
+  animation: tabContentAnimation 1s forwards;
+}
+.tab-content--show .accordion__list-content {
+  animation: tabContentAnimation 1s forwards;
+}
+.accordion__list-item {
+  border: 1px solid var(--accent-color);
+  margin-bottom: 30px;
+  border-radius: 20px;
+}
+.accordion__list-control {
+  display: block;
+  width: 100%;
+  padding: 20px 30px;
+  background: transparent;
+  font-size: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--accent-text);
+  font-weight: 400;
+  font-size: 42px;
+  font-family: "Gabriola";
+  transition: all 0.4s;
+  gap: 15px;
+  text-align: left;
+}
+.control__svg {
+  width: 34px;
+  height: 34px;
+  border: 1.5px solid var(--accent-color);
+  border-radius: 50%;
+  position: relative;
+  flex-shrink: 0;
+  transition: all 0.4s;
+}
+.control__svg:hover {
+  background-color: var(--accent-color);
+}
+.control__svg:hover svg {
+  transform: rotate(90deg);
+}
+.control__svg:hover path {
+  fill: var(--general-bg);
+}
+.control__svg path {
+  transition: all 0.4s;
+}
+.control__svg svg {
+  position: absolute;
+  top: 28%;
+  right: 24%;
+  transition: all 0.4s;
+}
+.control__svg--active {
+  background: var(--accent-color);
+}
+.control__svg--active svg {
+  transform: rotate(90deg);
+}
+.control__svg--active path {
+  fill: var(--general-bg);
+}
+.accordion__list-content {
+  padding: 0;
+  display: flex;
+  gap: 80px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 0.4s;
+  visibility: hidden;
+}
+.accordion__list-item--openet .accordion__list-content {
+  padding: 0 30px 0px;
+  visibility: visible;
+  margin-bottom: 40px;
+}
+.accordion__cont-col {
+  max-width: 507px;
+  width: 100%;
+}
+.accordion__content-title {
+  text-transform: uppercase;
+  color: #ceaad0;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.accordion__content-item {
+  margin-bottom: 20px;
+  display: flex;
+}
+.accordion__content-item:last-child {
+  margin-bottom: 0px;
+}
+.accordion__content-img {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #ceaad0;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 4px;
+  flex-shrink: 0;
+}
+.accordion__content-text {
+  width: 100%;
+}
+.programe__buttom {
+  margin-top: 40px;
+}
+.program__buttom-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.programe__action {
+  display: grid;
+  grid-template: repeat(3, auto) / 1.65fr 1fr;
+  gap: 40px;
+  width: 100%;
+  max-width: 501px;
+  flex-shrink: 0;
+}
+.action__discount {
+  grid-row: 1 / 3;
+  padding: 40px 81px 40px 40px;
+  background: #ffe0cb;
+  border-radius: 20px;
+  font-size: 20px;
+  height: 100%;
+  max-height: 232px;
+}
+.action__discount span {
+  font-size: 16px;
+  margin-left: 50%;
+  white-space: nowrap;
+}
+.discount__value {
+  font-weight: 400;
+  font-size: 74px;
+  color: #ffa55c;
+  line-height: 0.82;
+  text-align: center;
+  font-family: "Gabriola";
+  margin-left: 5%;
+  margin-bottom: 7px;
+  transform-origin: 0 0;
+  animation: discountValue .7s infinite alternate linear;
+}
+@keyframes discountValue {
+  0% {
+    font-weight: 400;
+    font-size: 74px;
+    color: #ffa55c;
+    line-height: 0.82;
+    text-align: center;
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1) translateX(5%);
+    color: #ff9138;
+  }
+}
+.discount__price-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: #ceaad0;
+  margin-bottom: 5px;
+}
+.discount__price-value {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 0.9;
+  color: var(--general-text);
+  font-family: "Gabriola";
+}
+.discount__price-value--big {
+  font-size: 50px;
+  line-height: 0.9;
+}
+.program__action-button {
+  grid-column: 1/-1;
+}
+.programe__img img{
+  width: 100%;
+
+}
