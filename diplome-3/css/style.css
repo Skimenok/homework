@@ -1,6 +1,5 @@
 body {
   font-family: "Muller", sans-serif;
-
   color: var(--color-text);
 }
 .continer {
@@ -21,6 +20,16 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+}
+.bacround {
+  position: fixed; /* Фон фиксируется и остаётся на месте при прокрутке */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10; /* Фон помещается за всеми элементами */
+  transition: all .4s;
+  background-size: cover; /* Изображение растягивается по всей области */
 }
 .button {
   padding: 29px 42px 21px 42px;
@@ -168,11 +177,9 @@ body {
   /* display: flex;
   justify-content: space-between; */
   /* flex-wrap: wrap; */
-
 }
 .header__content-right {
   /* margin-top: 113px; */
-
 }
 .header__content-title {
   position: relative;
@@ -192,6 +199,9 @@ body {
   text-transform: uppercase;
 }
 .header__content__title-span {
+  padding: 6px 13px;
+  border-radius: 60px;
+  background: #343a3e;
 }
 .header__content-list {
   display: flex;
@@ -241,9 +251,9 @@ body {
   align-items: center;
 }
 header__left-svg path {
-  transform: all .4s;
+  transform: all 0.4s;
 }
-.header__left-svg:hover path{
+.header__left-svg:hover path {
   fill: var(--color-text);
 }
 .header__left-svg {
@@ -264,7 +274,7 @@ header__left-svg path {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #f69020;
-} 
+}
 .header__buttom {
 }
 .header__bottom-list {
