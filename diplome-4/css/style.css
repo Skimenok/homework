@@ -220,6 +220,8 @@ body {
   display: flex;
   gap: 21px;
   margin-top: 74px;
+  position: relative;
+  z-index: 5;
 }
 .header__content__list-item {
   display: flex;
@@ -239,6 +241,9 @@ body {
   align-items: end;
   background: url(../img/decoration/Group\ 18.png) 50% 0%;
   justify-content: space-between;
+  position: relative;
+  top: -17%;
+  left: -21%;
 }
 .header__left-house {
   position: relative;
@@ -337,6 +342,13 @@ header__left-svg path {
 .header__button {
   margin-top: 73px;
   margin-bottom: 125px;
+}
+.title__2 {
+  font-weight: 400;
+  font-size: 41px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 /* ==================================================================================================================================== */
