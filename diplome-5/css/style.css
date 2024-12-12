@@ -368,7 +368,6 @@ header__left-svg path {
 }
 .halls__content {
   z-index: 2;
-
 }
 .halls__text {
   font-weight: 400;
@@ -391,7 +390,7 @@ header__left-svg path {
   margin-bottom: 35px;
 }
 .halls__tab__controls-item {
-  transition: all .4s;
+  transition: all 0.4s;
 }
 .halls__tab__controls-item:hover .halls__tab__controls-link {
   color: #ffc619;
@@ -403,16 +402,27 @@ header__left-svg path {
   text-transform: uppercase;
   color: #606571;
   white-space: nowrap;
-  transition: all .4s;
+  transition: all 0.4s;
 }
 .halls__contents {
   display: none;
+  transition: all 1.5s;
 }
 .halls__tab__controls-item--opend {
   color: #ffc619;
 }
 .halls__content--opend {
+  transition: all 1.5s;
   display: block;
+  animation: hallsContentt 1.5s forwards;
+}
+@keyframes hallsContentt {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .halls__nomer {
