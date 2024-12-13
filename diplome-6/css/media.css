@@ -137,6 +137,25 @@
     font-size: 14px;
   }
 }
+@media (max-width: 900px) {
+  .halls__title {
+    margin-bottom: 35px;
+    margin-top: 60px;
+  }
+  .halls__text {
+    margin-bottom: 30px;
+  }
+  .main__halls {
+    padding-bottom: 50px;
+  }
+  .halls__slider {
+    display: none;
+  }
+  .halls__slider--modal {
+    display: block;
+    margin-bottom: 27px;
+  }
+}
 @media (max-width: 800px) {
   .header__bottom-item {
     flex-direction: column;
@@ -184,6 +203,13 @@
     text-transform: uppercase;
     max-width: 286px;
   }
+  .halls__p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.27778;
+    letter-spacing: 0.03em;
+    max-width: 310px;
+  }
 }
 @media (max-width: 500px) {
   .header__logo img {
@@ -204,6 +230,17 @@
   .header__left-svg {
     width: 63px;
     height: 63px;
+  }
+
+  .halls__tab__controls {
+    /* display: flex
+; */
+    /* gap: 43px; */
+    margin-bottom: 35px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 303px;
+    gap: 20px;
   }
 }
 @media (max-width: 350px) {

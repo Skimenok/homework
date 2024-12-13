@@ -58,6 +58,9 @@ const swiper = new Swiper(".swiper", {
   pagination: {
     el: ".halls__pagination",
     type: "fraction",
+    renderFraction: (currentClass, totalClass) => {
+      return `<span class="${currentClass}"></span> <span class="halls__pagination-newSpan">из</span> <span class="${totalClass}"></span>`;
+    },
   },
 
   // Navigation arrows
@@ -65,4 +68,13 @@ const swiper = new Swiper(".swiper", {
     nextEl: ".halls-button-next",
     prevEl: ".halls-button-prev",
   },
+});
+
+
+document.querySelectorAll(".halls__small-img-bg").forEach((container) => {
+  container.addEventListener("click", function () {
+    // Открыть изображение в FS Lightbox
+    const lightbox = document.querySelector('[data-fslightbox="gallery"]');
+    lightbox.click(); // Имитируем клик на элементе lightbox
+  });
 });

@@ -28,6 +28,8 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+.big__text {
+}
 .bacround {
   position: fixed; /* Фон фиксируется и остаётся на месте при прокрутке */
   top: 0;
@@ -437,6 +439,13 @@ header__left-svg path {
   font-weight: 400;
   font-size: 18px;
   letter-spacing: 0.05em;
+  background: linear-gradient(
+    97deg,
+    rgba(246, 144, 32, 0.24) 0%,
+    rgba(246, 144, 32, 0) 100%
+  );
+  max-width: 131px;
+  padding: 10px 5px;
 }
 .halls__S {
   display: flex;
@@ -444,12 +453,26 @@ header__left-svg path {
   font-weight: 400;
   font-size: 18px;
   letter-spacing: 0.05em;
+  background: linear-gradient(
+    97deg,
+    rgba(246, 144, 32, 0.24) 0%,
+    rgba(246, 144, 32, 0) 100%
+  );
+  padding: 10px 5px;
+  max-width: 158px;
 }
 .halls__piple {
   display: flex;
   font-weight: 400;
   font-size: 18px;
   letter-spacing: 0.05em;
+  background: linear-gradient(
+    97deg,
+    rgba(246, 144, 32, 0.24) 0%,
+    rgba(246, 144, 32, 0) 100%
+  );
+  padding: 10px 5px;
+  max-width: 268px;
 }
 .halls__piple svg,
 .halls__nomer svg,
@@ -475,6 +498,7 @@ header__left-svg path {
   bottom: 0;
   z-index: 3;
 }
+
 .halls__big-img {
   width: 105%;
 }
@@ -486,7 +510,33 @@ header__left-svg path {
   background: rgba(19, 21, 23, 0.6);
   /* opacity: 0.6 */
 }
-
+.halls__small-img-bg {
+  position: relative;
+  cursor: pointer;
+  transition: all .4s;
+}
+.halls__small-img-bg img{
+  width: 100%;
+  height: 100%;
+}
+.halls__small-img-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(19, 21, 23, 0.6); /* Полупрозрачный фон */
+  z-index: 1; /* Чтобы фон был под изображением */
+  transition: all .4s;
+}
+.halls__small-img-bg:hover::before {
+  background: rgba(255, 198, 25, 0.4);
+  content: url(../img/icons/see.svg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .halls__row {
   position: relative;
   z-index: 5;
@@ -495,19 +545,22 @@ header__left-svg path {
   display: flex;
 }
 .halls-button-prev,
-.halls-button-next { 
+.halls-button-next {
   width: 70px !important;
   height: 70px;
   border-radius: 50%;
   border: 1px solid #282b32;
   flex-shrink: 0;
-  transition: all .4s;
+  transition: all 0.4s;
+  z-index: 11;
 }
 .halls-button-prev:hover,
 .halls-button-next:hover {
   background: #282b32;
 }
 .halls__pagination {
+  position: relative;
+  top: 9px;
 }
 .halls-button-next {
 }
@@ -541,4 +594,24 @@ header__left-svg path {
 .swiper-button-next,
 .swiper-button-prev {
   width: auto;
+}
+.halls__slider--modal {
+  display: none;
+}
+.swiper-pagination-current {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+}
+.swiper-pagination-total,
+.halls__pagination-newSpan {
+  font-weight: 500;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  font-size: 16px;
+  color: #606571;
+}
+.halls__bg-img {
+  background: #000;
 }
