@@ -88,6 +88,7 @@ body {
 }
 .main___advantages {
   padding-top: 110px;
+  padding-bottom: 110px;
 }
 
 /* ==================================================================================================================================== */
@@ -648,6 +649,7 @@ header__left-svg path {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 1fr;
+  gap: 30px;
 }
 .advantages__card {
   padding: 50px 31px 38px 50px;
@@ -717,4 +719,12 @@ header__left-svg path {
 .advantages__button {
   position: relative;
   /* bottom: -19%; */
+}
+.advantages__flex-modal {
+  display: none;
+}
+.advantages__card-7__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

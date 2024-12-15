@@ -90,6 +90,11 @@
   .header__left-tg {
     margin-bottom: 220px;
   }
+  .advantages__button {
+    position: relative;
+    max-width: none;
+    width: 90vw;
+  }
 
   /* ============================================================================ */
 
@@ -98,6 +103,8 @@
   }
   .advantages__grid {
     grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+    grid-template-rows: auto auto;
   }
   .advantages__card-3 {
     background: #202124;
@@ -107,6 +114,28 @@
   }
   .advantages__card-7 img {
     width: 55%;
+  }
+  .advantages__grid--modal {
+    display: none;
+  }
+  .advantages__flex-modal {
+    display: block;
+    display: flex;
+    gap: 12px;
+  }
+  .column__1,
+  .column__2 {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .advantages__card-7__inner {
+    align-items: start;
+  }
+  .advantages__card-7__inner {
+    align-items: start;
+    position: relative;
+    top: -20px;
   }
 }
 @media (max-width: 1100px) {
@@ -158,6 +187,10 @@
   .header__left-tg {
     margin-bottom: 0px;
   }
+  .main___advantages {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 @media (max-width: 600px) {
   .burger {
@@ -182,6 +215,11 @@
   }
   .advantages__card img {
     width: 35%;
+  }
+  .advantages__button {
+    position: relative;
+    width: 90vw;
+    max-width: none;
   }
 }
 @media (max-width: 900px) {
@@ -304,5 +342,66 @@
 @media (max-width: 350px) {
   .header__bottom-item {
     padding: 10px 10px;
+  }
+  .title {
+    font-size: 32px;
+  }
+  .advantages__flex-modal,
+  .column__1,
+  .column__2 {
+    gap: 6px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 927px) {
+  .advantages__card-7__inner {
+    align-items: start;
+    position: relative;
+    top: 13px;
+  }
+}
+@media (max-width: 609px) {
+  .advantages__card-7__inner {
+    align-items: start;
+    position: relative;
+    top: -22px;
+  }
+}
+@media (max-width: 595px) {
+  .advantages__card-7__inner {
+    align-items: start;
+    position: relative;
+    top: -112px;
+  }
+}
+@media (max-width: 540px) {
+  .advantages__card-7__inner {
+    align-items: start;
+    position: relative;
+    top: -63px;
+  }
+}
+@media (max-width: 360px) {
+  .advantages__card-7__inner {
+    align-items: start;
+    position: relative;
+    top: -125px;
   }
 }
