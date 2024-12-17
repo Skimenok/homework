@@ -101,6 +101,8 @@ window.addEventListener("resize", syncWidths);
 //==========================================================================================================//
 //==========================================================================================================//
 
+
+
 new Swiper(".telefons__sliders", {
   // Optional parameters
   // direction: "vertical",
@@ -109,7 +111,7 @@ new Swiper(".telefons__sliders", {
   spaceBetween: 88,
   // If we need pagination
   pagination: {
-    el: ".halls__pagination",
+    el: ".telefons__pagination ",
     type: "fraction",
     renderFraction: (currentClass, totalClass) => {
       return `<span class="${currentClass}"></span> <span class="halls__pagination-newSpan">из</span> <span class="${totalClass}"></span>`;
@@ -121,3 +123,4 @@ new Swiper(".telefons__sliders", {
     prevEl: ".telefons-button-prev",
   },
 });
+

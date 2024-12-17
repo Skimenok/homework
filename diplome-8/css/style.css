@@ -737,11 +737,11 @@ header__left-svg path {
 .telefons {
   background: #131517;
   padding: 100px 0 100px 0;
-
 }
 .telefons__top {
   margin-bottom: 56px;
   display: flex;
+  align-items: end;
 }
 .telefons__text {
   font-weight: 400;
@@ -758,25 +758,38 @@ header__left-svg path {
 }
 .telefons__row {
   position: relative;
-    z-index: 50;
+  z-index: 50;
+  position: relative;
+  z-index: 5;
+  height: 70px;
+  width: 100%;
+  max-width: 250px;
+  display: flex;
 }
 .telefons-button-prev {
 }
 .telefons__pagination {
+  position: relative;
+  top: 24px;
 }
 .swiper-pagination {
 }
 .telefons-button-next {
 }
 .telefons__sliders {
+  transition: all 0.4s;
 }
 .telefons__sliders-wraper {
 }
 .telefons__slide {
-  
+  transition: all 0.4s;
 }
-.swiper-backface-hidden .swiper-slide {
-  max-width: 290px;
+.telefons__slide img {
+  transition: all 0.4s;
+  position: relative;
+  top: 12px;
+}
+.swiper-backface-hidden {
 }
 .telefons__slide-content {
   font-weight: 500;
@@ -787,6 +800,8 @@ header__left-svg path {
   align-items: center;
   gap: 17px;
   margin-top: 20px;
+  transition: all 0.4s;
+  margin-top: 38px;
 }
 .telefons__color-span {
   color: #f69020;
@@ -804,4 +819,19 @@ header__left-svg path {
 .telefons-button-prev:hover,
 .telefons-button-next:hover {
   background: #282b32;
+}
+.swiper-slide-next {
+  position: relative;
+  transition: all 0.4s;
+}
+.swiper-slide-next .telefons__ing-border::after {
+  content: url(../img/section/ifon.png);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* bottom: 27px;
+  right: 198px; */
+  bottom: 1%;
+  right: 4%;
+  display: block;
 }
